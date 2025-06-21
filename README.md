@@ -1,3 +1,0 @@
-# FuelCrate Vending
-
-main
