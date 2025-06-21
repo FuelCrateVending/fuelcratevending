@@ -254,3 +254,14 @@ body {
   padding: 0.5rem;
   margin-top: 0.25rem;
 }
+
+/* Footer */
+.footer {
+  padding: 2rem 0;
+  background: var(--fc-secondary);
+  color: #fff;
+}
+
+.footer a {
+  color: var(--fc-accent);
+}
