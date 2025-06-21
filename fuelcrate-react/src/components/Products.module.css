@@ -1,0 +1,41 @@
+.products {
+  padding: 2rem 0;
+}
+
+.cardList {
+  list-style: none;
+  padding: 0;
+}
+
+.gridAuto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.gapMd {
+  gap: 1.5rem;
+}

@@ -1,0 +1,50 @@
+.host {
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.gridAuto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.pill {
+  background: var(--fc-light);
+  padding: .75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btnPrimary {
+  background: var(--fc-primary);
+  color: #fff;
+}
+
+.gapMd {
+  gap: 1.5rem;
+}
