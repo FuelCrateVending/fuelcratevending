@@ -127,3 +127,32 @@ body {
     display: block;
   }
 }
+
+/* Hero section */
+.hero {
+  min-height: 80vh;
+  padding: 2rem;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1600/900?fitness') center/cover no-repeat;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.btn-primary {
+  background: var(--fc-primary);
+  color: #fff;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+}
