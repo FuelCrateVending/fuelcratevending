@@ -255,21 +255,5 @@ body {
   margin-top: 0.25rem;
 }
 
-/* Accessibility focus styles */
-a:focus-visible,
-button:focus-visible {
-  outline: 3px solid var(--fc-accent);
-  outline-offset: 2px;
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 1rem;
-  }
-  h1 {
-    font-size: 1.75rem;
-  }
-  h2 {
-    font-size: 1.25rem;
-  }
+main
 }
