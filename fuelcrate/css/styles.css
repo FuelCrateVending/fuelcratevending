@@ -1,7 +1,7 @@
 /* Styles for the FuelCrate marketing site */
 
 :root {
-  --fc-primary: #1ec06e;   /* energetic green */
+  --fc-primary: #177a43;   /* accessible green */
   --fc-secondary: #101820; /* near-black */
   --fc-accent: #20c8ff;    /* tech blue */
   --fc-light: #f7f9fa;
@@ -255,13 +255,5 @@ body {
   margin-top: 0.25rem;
 }
 
-/* Footer */
-.footer {
-  padding: 2rem 0;
-  background: var(--fc-secondary);
-  color: #fff;
-}
-
-.footer a {
-  color: var(--fc-accent);
+main
 }
