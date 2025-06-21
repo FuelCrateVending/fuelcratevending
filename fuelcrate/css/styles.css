@@ -1,2 +1,64 @@
 /* Styles for the FuelCrate marketing site */
 
+:root {
+  --fc-primary: #1ec06e;   /* energetic green */
+  --fc-secondary: #101820; /* near-black */
+  --fc-accent: #20c8ff;    /* tech blue */
+  --fc-light: #f7f9fa;
+  --fc-font: 'Inter', Arial, sans-serif;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fc-font);
+  color: var(--fc-secondary);
+  background: var(--fc-light);
+  line-height: 1.6;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--fc-primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}
