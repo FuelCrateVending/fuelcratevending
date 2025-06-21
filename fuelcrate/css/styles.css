@@ -201,3 +201,29 @@ body {
     padding: 4rem 1rem;
   }
 }
+
+/* Product cards */
+.gap-md {
+  gap: 1.5rem;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
