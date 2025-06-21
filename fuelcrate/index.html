@@ -89,9 +89,19 @@
     <a href="#contact" class="btn btn-primary">I’m Interested</a>
   </section>
 
-  <section id="contact" class="contact container text-center">
+  <section id="contact" class="contact container">
     <h2>Contact Us</h2>
-    <p>Ready to host FuelCrate? Email <a href="mailto:info@fuelcrate.com">info@fuelcrate.com</a> and we'll get in touch.</p>
+    <form class="contact-form flex column" action="https://formspree.io/f/yourID" method="POST">
+      <label>Name<input type="text" name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Facility Type
+        <select name="facility">
+          <option>Gym</option><option>Office</option><option>Clinic</option><option>Apartment</option><option>Other</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" rows="4"></textarea></label>
+      <button class="btn btn-primary" type="submit">Send</button>
+    </form>
   </section>
 
     <script src="js/main.js" defer></script>
