@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FuelCrate Marketing Site</title>
+    <meta name="description" content="FuelCrate provides smart, healthy micro‑markets for gyms, offices, and more.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header class="fc-header">
   <div class="container flex space-between">
-    <a href="#" class="logo">FuelCrate</a>
+    <a href="#" class="logo" aria-label="Home">FuelCrate</a>
     <nav id="nav" class="nav">
       <ul class="flex gap-lg">
-        <li><a href="#about">About</a></li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#host">Host FuelCrate</a></li>
-        <li><a href="#contact" class="btn">Contact</a></li>
+        <li><a href="#about" aria-label="About section">About</a></li>
+        <li><a href="#how" aria-label="How it works section">How It Works</a></li>
+        <li><a href="#products" aria-label="Products section">Products</a></li>
+        <li><a href="#host" aria-label="Host FuelCrate section">Host FuelCrate</a></li>
+        <li><a href="#contact" class="btn" aria-label="Contact section">Contact</a></li>
       </ul>
     </nav>
     <button id="navToggle" class="nav-toggle" aria-label="Menu"></button>
@@ -25,7 +29,7 @@
   <section id="hero" class="hero flex column center text-center">
     <h1>Healthy Fuel.<br/>Anywhere&nbsp;You&nbsp;Work&nbsp;or&nbsp;Train.</h1>
     <p>Smart micro-markets stocked with protein-packed snacks, fresh meals, and recovery drinks—managed remotely, always ready.</p>
-    <a href="#host" class="btn btn-primary">Bring FuelCrate to My Facility</a>
+    <a href="#host" class="btn btn-primary" aria-label="Host FuelCrate form">Bring FuelCrate to My Facility</a>
   </section>
 
   <section id="about" class="about container grid-auto gap-lg">
@@ -34,7 +38,7 @@
       <p>FuelCrate delivers convenient, nutritious options for people who push their limits—whether at the gym, the office, or en route to the next adventure.</p>
       <p>We curate high‑quality products, prioritize dietary transparency, and leverage Micromart technology for seamless, touch‑free experiences.</p>
     </div>
-    <img src="https://picsum.photos/seed/crate/600/400" alt="Customers choosing snacks from a FuelCrate vending machine" class="responsive">
+main
   </section>
 
   <section id="how" class="how container text-center">
@@ -59,19 +63,19 @@
     <h2>What’s Inside the Crate?</h2>
     <ul class="grid-auto gap-md card-list">
       <li class="card">
-        <img src="https://picsum.photos/seed/protein/400/300" alt="Protein snacks">
+        <img src="https://picsum.photos/seed/protein/400/300" alt="Protein snacks" loading="lazy">
         <h3>Protein Snacks</h3>
       </li>
       <li class="card">
-        <img src="https://picsum.photos/seed/meal/400/300" alt="Fresh meals">
+        <img src="https://picsum.photos/seed/meal/400/300" alt="Fresh meals" loading="lazy">
         <h3>Fresh Meals</h3>
       </li>
       <li class="card">
-        <img src="https://picsum.photos/seed/drinks/400/300" alt="Recovery drinks">
+        <img src="https://picsum.photos/seed/drinks/400/300" alt="Recovery drinks" loading="lazy">
         <h3>Recovery Drinks</h3>
       </li>
       <li class="card">
-        <img src="https://picsum.photos/seed/glutenfree/400/300" alt="Gluten‑free options">
+        <img src="https://picsum.photos/seed/glutenfree/400/300" alt="Gluten‑free options" loading="lazy">
         <h3>Gluten‑Free Options</h3>
       </li>
     </ul>
@@ -86,7 +90,7 @@
       <div class="pill">Contactless Payments</div>
       <div class="pill">Curated Healthy Selection</div>
     </div>
-    <a href="#contact" class="btn btn-primary">I’m Interested</a>
+    <a href="#contact" class="btn btn-primary" aria-label="Contact form">I’m Interested</a>
   </section>
 
   <section id="contact" class="contact container">
@@ -100,8 +104,7 @@
         </select>
       </label>
       <label>Message<textarea name="message" rows="4"></textarea></label>
-    <button class="btn btn-primary" type="submit">Send</button>
-  </form>
+main
   </section>
 
   <footer class="footer text-center">
