@@ -30,7 +30,7 @@
     display: none;
     flex-direction: column;
   }
-  #nav.open ul {
+  #nav[data-open="true"] ul {
     display: flex;
   }
   .navToggle {
