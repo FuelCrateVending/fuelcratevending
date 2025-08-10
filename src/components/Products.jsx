@@ -7,19 +7,19 @@ export default function Products() {
       <h2>What’s Inside the Crate?</h2>
       <ul className={`${styles.gridAuto} ${styles.gapMd} ${styles.cardList}`}>
         <li className={styles.card}>
-          <img src="https://picsum.photos/seed/protein/400/300" alt="Protein snacks" />
+          <img src="https://picsum.photos/seed/protein/400/300" alt="Protein snacks" loading="lazy" />
           <h3>Protein Snacks</h3>
         </li>
         <li className={styles.card}>
-          <img src="https://picsum.photos/seed/meal/400/300" alt="Fresh meals" />
+          <img src="https://picsum.photos/seed/meal/400/300" alt="Fresh meals" loading="lazy" />
           <h3>Fresh Meals</h3>
         </li>
         <li className={styles.card}>
-          <img src="https://picsum.photos/seed/drinks/400/300" alt="Recovery drinks" />
+          <img src="https://picsum.photos/seed/drinks/400/300" alt="Recovery drinks" loading="lazy" />
           <h3>Recovery Drinks</h3>
         </li>
         <li className={styles.card}>
-          <img src="https://picsum.photos/seed/glutenfree/400/300" alt="Gluten-free options" />
+          <img src="https://picsum.photos/seed/glutenfree/400/300" alt="Gluten-free options" loading="lazy" />
           <h3>Gluten‑Free Options</h3>
         </li>
       </ul>

@@ -2,10 +2,20 @@ import React from 'react';
 import styles from './Contact.module.css';
 
 export default function Contact() {
+  const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
+  const action = formspreeId ? `https://formspree.io/f/${formspreeId}` : undefined;
+
+  function handleSubmit(e) {
+    if (!action) {
+      e.preventDefault();
+      alert('Form endpoint not configured. Set VITE_FORMSPREE_ID in your environment.');
+    }
+  }
+
   return (
     <section id="contact" className={`${styles.contact} ${styles.container}`}>
       <h2>Contact Us</h2>
-      <form className={`${styles.contactForm} ${styles.flex} ${styles.column}`} action="https://formspree.io/f/yourID" method="POST">
+      <form className={`${styles.contactForm} ${styles.flex} ${styles.column}`} action={action} method="POST" onSubmit={handleSubmit}>
         <label>
           Name<input type="text" name="name" required />
         </label>
