@@ -1,6 +1,6 @@
 .header {
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: var(--fc-surface);
+  border-bottom: 1px solid var(--fc-border);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -18,7 +18,7 @@
 .logo {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #2eca7f; /* your brand green */
+  color: var(--fc-primary);
   letter-spacing: -0.5px;
   text-decoration: none;
 }
@@ -34,7 +34,7 @@
 .nav ul li a {
   font-weight: 500;
   font-size: 1rem;
-  color: #222;
+  color: var(--fc-text);
   text-decoration: none;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
@@ -42,13 +42,13 @@
 }
 
 .nav ul li a:hover {
-  background: #2eca7f;
-  color: #ffffff;
+  background: var(--fc-primary);
+  color: #fff;
 }
 
 .btn {
-  background: #2eca7f;
-  color: #ffffff;
+  background: var(--fc-primary);
+  color: #fff;
   padding: 0.5rem 1.25rem;
   border-radius: 9999px;
   font-weight: 600;
@@ -57,7 +57,7 @@
 }
 
 .btn:hover {
-  background: #24a866; /* slightly darker green */
+  background: color-mix(in srgb, var(--fc-primary) 85%, black);
 }
 
 /* Mobile styles */
@@ -71,9 +71,9 @@
     position: absolute;
     top: 64px;
     right: 0;
-    background: white;
+    background: var(--fc-surface);
     width: 100%;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid var(--fc-border);
   }
 
   .navOpen ul {
@@ -86,6 +86,19 @@
     display: block;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #333;
+    color: var(--fc-text);
   }
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: var(--fc-text);
+}
+
+.themeToggle:hover,
+.themeToggle:focus {
+  color: var(--fc-primary);
 }

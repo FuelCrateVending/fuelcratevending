@@ -16,7 +16,8 @@
 .card {
   overflow: hidden;
   border-radius: 8px;
-  background: #fff;
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
   transition: transform .2s;
 }
 

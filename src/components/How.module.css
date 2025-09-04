@@ -20,9 +20,9 @@
 
 .step {
   padding: 1rem;
-  background: #fff;
+  background: var(--fc-surface);
   border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--fc-border);
 }
 
 .container {

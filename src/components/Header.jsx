@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Header.module.css';
+import ThemeToggle from './ThemeToggle.jsx';
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -27,6 +28,7 @@ export default function Header() {
             <li><a href="#contact" className={styles.btn}>Contact</a></li>
           </ul>
         </nav>
+        <ThemeToggle />
         <button
           id="navToggle"
           className={styles.navToggle}

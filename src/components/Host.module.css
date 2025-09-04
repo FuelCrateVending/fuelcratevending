@@ -27,10 +27,12 @@
 }
 
 .pill {
-  background: var(--fc-light);
+  background: var(--fc-surface);
   padding: .75rem 1.25rem;
   border-radius: 999px;
   font-weight: 600;
+  color: var(--fc-text);
+  border: 1px solid var(--fc-border);
 }
 
 .btn {

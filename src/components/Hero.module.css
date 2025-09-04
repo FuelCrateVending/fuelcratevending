@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh; /* Full viewport height */
-  color: white;
+  color: var(--fc-hero-text);
 
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.45); /* Adjust darkness */
+  background: var(--fc-hero-overlay);
   z-index: 1;
 }
 
@@ -45,12 +45,12 @@
 }
 
 .btnPrimary {
-  background-color: #e63946; /* Your brand red */
-  color: white;
+  background-color: var(--fc-primary);
+  color: #fff;
 }
 
 .btnPrimary:hover {
-  background-color: #d62828; /* Darker hover red */
+  background-color: color-mix(in srgb, var(--fc-primary) 85%, black);
 }
 
 /* Responsive tweaks */
