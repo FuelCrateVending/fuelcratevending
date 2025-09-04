@@ -1,68 +1,91 @@
 .header {
-  padding: 1rem 0;
-}
-
-.logo {
-  font-weight: bold;
-  color: var(--fc-primary);
-  text-decoration: none;
-}
-
-.nav ul {
-  list-style: none;
-}
-
-.nav ul li a {
-  color: var(--fc-secondary);
-  text-decoration: none;
-}
-
-.nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.navToggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .nav ul {
-    display: none;
-    flex-direction: column;
-  }
-  #nav[data-open="true"] ul {
-    display: flex;
-  }
-  .navToggle {
-    display: block;
-  }
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
-
-.flex {
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.spaceBetween {
-  justify-content: space-between;
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2eca7f; /* your brand green */
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav ul li a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #222;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav ul li a:hover {
+  background: #2eca7f;
+  color: #ffffff;
 }
 
 .btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: var(--fc-primary);
-  color: #fff;
+  background: #2eca7f;
+  color: #ffffff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 4px;
+  transition: background 0.2s ease;
 }
 
-.gapLg {
-  gap: 2rem;
+.btn:hover {
+  background: #24a866; /* slightly darker green */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .navOpen {
+    display: block;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: white;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .navOpen ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+  }
 }

@@ -6,10 +6,10 @@ export default function About() {
     <section id="about" className={`${styles.about} ${styles.container} ${styles.grid}`}>
       <div>
         <h2>Our Mission</h2>
-        FuelCrate makes it easy for businesses to offer healthy, reliable refreshment solutions. 
+        <p>FuelCrate makes it easy for businesses to offer healthy, reliable refreshment solutions. 
         With transparent sourcing, quality products, and advanced Micromart technology, we handle everything—so you can focus on your business while we fuel your people.</p>
       </div>
-      <img src="https://picsum.photos/seed/crate/600/400" alt="FuelCrate display" className={styles.responsive} loading="lazy" />
+      <img src="public\images\Micromart-Smart-Store-transparent.png" alt="FuelCrate display" className={styles.responsive} loading="lazy" />
     </section>
   );
 }

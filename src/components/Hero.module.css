@@ -1,43 +1,70 @@
 .hero {
-  min-height: 80vh;
+  position: relative;
+  background-image: url('/images/Micromart-Gym.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full viewport height */
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 2rem;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1600/900?fitness') center/cover no-repeat;
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
+/* Dark overlay to make text readable */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45); /* Adjust darkness */
+  z-index: 1;
+}
+
+/* Keep text above the overlay */
+.hero h1,
+.hero p,
+.hero a {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+/* Style the call-to-action button */
 .btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
 }
 
 .btnPrimary {
-  background: var(--fc-primary);
-  color: #fff;
+  background-color: #e63946; /* Your brand red */
+  color: white;
 }
 
-.flex {
-  display: flex;
-  gap: 1rem;
+.btnPrimary:hover {
+  background-color: #d62828; /* Darker hover red */
 }
 
-.column {
-  flex-direction: column;
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
-}
-
-.textCenter {
-  text-align: center;
-}
-
+/* Responsive tweaks */
 @media (max-width: 768px) {
   .hero {
-    padding: 4rem 1rem;
+    background-position: top center; /* Focus on top for mobile */
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 }
