@@ -18,6 +18,9 @@
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.25rem;
+  background: var(--fc-surface);
+  color: var(--fc-text);
+  border: 1px solid var(--fc-border);
 }
 
 .flex {

@@ -1,7 +1,39 @@
 :root {
-  --fc-primary: #1ec06e;
-  --fc-secondary: #101820;
-  --fc-accent: #20c8ff;
-  --fc-light: #f7f9fa;
   --fc-font: 'Inter', Arial, sans-serif;
+
+  /* Light theme (existing / refined) */
+  --fc-bg: #ffffff;
+  --fc-surface: #f7f9fa;
+  --fc-text: #0b0c0f;
+  --fc-muted: #6b7280;
+  --fc-border: #e5e7eb;
+
+  --fc-primary: #1ec06e;
+  --fc-accent: #20c8ff;
+  --fc-link: #1166cc;
+
+  --fc-hero-overlay: rgba(0, 0, 0, 0.45);
+  --fc-hero-text: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  --fc-bg: #0b0b0c;
+  --fc-surface: #141418;
+  --fc-text: #e9edf2;
+  --fc-muted: #9aa3af;
+  --fc-border: #25282e;
+
+  --fc-primary: #1ec06e;
+  --fc-accent: #8ad9ff;
+  --fc-link: #8ad9ff;
+
+  --fc-hero-overlay: rgba(0, 0, 0, 0.3);
+  --fc-hero-text: #e9edf2;
+}
+
+/* Base application */
+html, body {
+  background: var(--fc-bg);
+  color: var(--fc-text);
+  font-family: var(--fc-font);
 }

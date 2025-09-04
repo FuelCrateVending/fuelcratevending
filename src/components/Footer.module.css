@@ -1,5 +1,7 @@
 .footer {
   padding: 2rem 0;
   text-align: center;
-  background: var(--fc-light);
+  background: var(--fc-surface);
+  color: var(--fc-text);
+  border-top: 1px solid var(--fc-border);
 }
