@@ -9,7 +9,7 @@ export default function About() {
         <p>FuelCrate makes it easy for businesses to offer healthy, reliable refreshment solutions. 
         With transparent sourcing, quality products, and advanced Micromart technology, we handle everything—so you can focus on your business while we fuel your people.</p>
       </div>
-      <img src="public\images\Micromart-Smart-Store-transparent.png" alt="FuelCrate display" className={styles.responsive} loading="lazy" />
+      <img src="/images/Micromart-Smart-Store-transparent.png" alt="FuelCrate display" className={styles.responsive} loading="lazy" />
     </section>
   );
 }
