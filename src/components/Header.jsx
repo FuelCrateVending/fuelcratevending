@@ -29,14 +29,16 @@ export default function Header() {
           </ul>
         </nav>
         <ThemeToggle />
+        {/* NEW: mobile menu toggle button */}
         <button
+          type="button"                // avoids form-submit default
           id="navToggle"
           className={styles.navToggle}
           aria-label="Menu"
           aria-controls="nav"
           aria-expanded={isNavOpen}
           onClick={() => setIsNavOpen((o) => !o)}
-        />
+/>
       </div>
     </header>
   );

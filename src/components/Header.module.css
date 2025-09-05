@@ -102,3 +102,40 @@
 .themeToggle:focus {
   color: var(--fc-primary);
 }
+
+/* === Mobile nav toggle (hidden on desktop) === */
+.navToggle {
+  display: none;            /* hidden on desktop */
+  background: none;
+  border: 0;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: var(--fc-text);
+}
+
+/* Show & style on mobile */
+@media (max-width: 768px) {
+  .navToggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+  }
+
+  .navToggle:hover,
+  .navToggle:focus-visible {
+    background: var(--fc-surface);
+    outline: 1px solid var(--fc-border);
+  }
+
+  /* Hamburger icon using CSS only */
+  .navToggle::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+    box-shadow: 0 -6px 0 0 currentColor, 0 6px 0 0 currentColor;
+  }
+}
